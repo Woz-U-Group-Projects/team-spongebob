@@ -17,7 +17,7 @@ mongoose.connect(process.env.DATABASE, {
   useUnifiedTopology: true,
   useCreateIndex: true
 })
-.then(() => console.log('Connected to DB ...'))
+.then(() => console.log('Team Spongebob says - DB is Connected ...'))
 .catch(err => console.log('DB Connection Error: ', err))
 
 //Routes Import
