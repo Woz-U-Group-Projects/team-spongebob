@@ -17,7 +17,7 @@ exports.registration = (req, res) => {
       })
     }
 
-    const token = jwt.sign({name, email, password}, process.env.JWT_ACCOUNT_ACTIVATION, {expiresIn: '1Om'} )
+    const token = jwt.sign({name, email, password}, process.env.JWT_ACCOUNT_ACTIVATION, {expiresIn: '10m'} )
 
     const emailData = {
       to: email,
@@ -30,5 +30,11 @@ exports.registration = (req, res) => {
       <p>This email msy contian sensetive inforamtion</p>
       `,
     }
+
+    sgMail.send(emailData).then(sent => {
+      return res.json({
+        message: `Email was sent to ${email}. Follow instruction to activate account`
+      })
+    })
   })
 }
