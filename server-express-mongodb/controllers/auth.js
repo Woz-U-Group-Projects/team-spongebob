@@ -25,7 +25,7 @@ exports.registration = (req, res) => {
       subject: `Email Verification `,
       html: `
       <p>Please follow link to activate account</p>
-      <p>${process.env.CLIENT_URL}/auth/activate</p>
+      <p>${process.env.CLIENT_URL}/auth/activate/${token}</p>
       <hr>
       <p>This email msy contian sensetive inforamtion</p>
       `,
@@ -34,6 +34,11 @@ exports.registration = (req, res) => {
     sgMail.send(emailData).then(sent => {
       return res.json({
         message: `Email was sent to ${email}. Follow instruction to activate account`
+      })
+    })
+    .catch(err => {
+      return res.json({
+        message: err.message
       })
     })
   })
