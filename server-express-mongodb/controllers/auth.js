@@ -2,7 +2,7 @@ const User = require('../models/user')
 const jwt = require('jsonwebtoken')
 
 const sgMail = require('@sendgrid/mail')
-sgMail.setApiKey
+sgMail.setApiKey(process.env.SENDGRID_API_KEY)
 
 
 
@@ -17,6 +17,18 @@ exports.registration = (req, res) => {
       })
     }
 
-    const
+    const token = jwt.sign({name, email, password}, process.env.JWT_ACCOUNT_ACTIVATION, {expiresIn: '1Om'} )
+
+    const emailData = {
+      to: email,
+      from: process.env.EMAIL_FROM, // Use the email address or domain you verified above
+      subject: `Email Verification `,
+      html: `
+      <p>Please follow link to activate account</p>
+      <p>${process.env.CLIENT_URL}/auth/activate</p>
+      <hr>
+      <p>This email msy contian sensetive inforamtion</p>
+      `,
+    }
   })
 }
