@@ -3,7 +3,7 @@ const router = express.Router()
 
 
 //Controller Imports
-const { registration } = require('../controllers/auth')
+const { registration, accountActivation } = require('../controllers/auth')
 
 
 //Validators Import
@@ -14,6 +14,7 @@ const { userRegistrationValidator } = require('../validators/auth')
 
 //Routes
 router.post('/registration',userRegistrationValidator, runValidation, registration)
+router.post('/account-activation', accountActivation)
 
 
 module.exports = router

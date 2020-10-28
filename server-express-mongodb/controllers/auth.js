@@ -43,3 +43,38 @@ exports.registration = (req, res) => {
     })
   })
 }
+
+
+exports.accountActivation = (req, res) => {
+  const {token} = req.body
+
+  if(token) {
+    jwt.verify(token, process.env.JWT_ACCOUNT_ACTIVATION, function(err, decoded) {
+      if(err){
+        console.log('JWT ACCOUNT ACTIVATION FAILED TO VERIFY', err)
+        return res.status(401).json({
+          error: 'This has Link Expired. Please Register again'
+        })
+      }
+
+      const {name, email, password} = jwt.decode(token)
+      const user = new User({name , email, password})
+
+      user.save((err, user) => {
+        if(err) {
+          console.log('SAVE USER ACCOUNT ACTIVATION ERROR', err)
+          return res.status(401).json({
+            error: 'Error saving user to Database. Try signing up again'
+          })
+        }
+        return res.json({
+          message: 'Registration successful. Please Login'
+        })
+      })
+    })
+  } else {
+    return res.json({
+      message: 'Something may have gone wrong. Please try again.'
+    })
+  }
+}
