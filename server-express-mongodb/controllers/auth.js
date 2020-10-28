@@ -1,11 +1,12 @@
 const User = require('../models/user')
 const jwt = require('jsonwebtoken')
 
+// SENDMAIL
 const sgMail = require('@sendgrid/mail')
 sgMail.setApiKey(process.env.SENDGRID_API_KEY)
 
 
-
+// REGISTRATION CONTROLLER
 exports.registration = (req, res) => {
   
   const { name, email, password } = req.body
@@ -44,7 +45,7 @@ exports.registration = (req, res) => {
   })
 }
 
-
+//ACCOUNT ACTIVATION CONTROLLER
 exports.accountActivation = (req, res) => {
   const {token} = req.body
 
@@ -77,4 +78,33 @@ exports.accountActivation = (req, res) => {
       message: 'Something may have gone wrong. Please try again.'
     })
   }
+}
+
+
+//LOGIN CONTROLLER
+exports.login = (req, res) => {
+  const {email, password} = req.body
+
+  //Does User Exist
+  User.findOne({email}).exec((err, user) => {
+    if(err || !user) {
+      return res.status(400).json({
+        error: 'Email Does not exist. Please Sign up'
+      })
+    }
+    //Authenticate
+    if(!user.authenticate(password)) {
+      return res.status(400).json({
+        error: 'Email and password do not match'
+      })
+    }
+    //Generate token for Client
+    const token = jwt.sign({_id: user._id}, process.env.JWT_SECRET, {expiresIn: '10d'})
+    const {_id, name, email, role} = user
+
+    return res.json({
+      token,
+      user: {_id, name, email, role}
+    })
+  })
 }
