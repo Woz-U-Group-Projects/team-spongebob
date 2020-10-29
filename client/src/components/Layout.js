@@ -5,13 +5,13 @@ const Layout = ({children}) => {
   const nav = () => (
     <div className="ui secondary pointing menu">
       <div className="right menu">
-        <Link className="ui item active">
+        <Link to="/" className="ui item active">
           Home
         </Link>
-        <Link className="ui item">
+        <Link to="/shop" className="ui item">
           Shop
         </Link>
-        <Link className="ui item">
+        <Link to="/mycloset" className="ui item">
           MyCloset
         </Link>
       </div>
