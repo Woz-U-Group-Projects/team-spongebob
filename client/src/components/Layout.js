@@ -5,7 +5,7 @@ const Layout = ({children}) => {
   const nav = () => (
     <div className="ui secondary pointing menu">
       <div className="right menu">
-        <Link to="/" className="ui item active">
+        <Link to="/" className="ui item">
           Home
         </Link>
         <Link to="/shop" className="ui item">
@@ -13,6 +13,9 @@ const Layout = ({children}) => {
         </Link>
         <Link to="/mycloset" className="ui item">
           MyCloset
+        </Link>
+        <Link to="/registration" className="ui item">
+          Register
         </Link>
       </div>
     </div>
