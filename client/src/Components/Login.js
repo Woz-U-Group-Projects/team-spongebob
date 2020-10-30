@@ -5,7 +5,7 @@ const LoginForm = ()=>{
   return(
 
   <div>
-    <h1>Welcome Back!</h1>
+    <h1>Welcome Back to Closet Space!</h1>
     <form className="ui form">
   <div className="field"></div>
     <label>Enter Email</label>
@@ -14,6 +14,7 @@ const LoginForm = ()=>{
   <div className="field"></div>
     <label>Password</label>
     <input type="text" name="password" placeholder="Password"></input>
+    <h1>Forgot Password?</h1>
   
   <div className="field"></div>
     <div className="ui checkbox"></div>
