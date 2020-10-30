@@ -1,4 +1,5 @@
 import React from "react";
+import LoginForm from "./Login";
 
 
 const Landing = () => {
@@ -12,6 +13,7 @@ const Landing = () => {
               Landing page
             </h1>
             <h2>About the application</h2>
+            <LoginForm/>
           </div>
         </div>
       </div>
