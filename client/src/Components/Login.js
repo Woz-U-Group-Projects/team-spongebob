@@ -5,8 +5,8 @@ const LoginForm = ()=>{
   return(
 
   <div>
-    <h1>Welcome Back to Closet Space!</h1>
-    <form className="ui form">
+    <h1>Welcome Back to ClosetSpace!</h1>
+    <form className="ui mini form">
   <div className="field"></div>
     <label>Enter Email</label>
     <input type="text" name="email" placeholder="Email"></input>
