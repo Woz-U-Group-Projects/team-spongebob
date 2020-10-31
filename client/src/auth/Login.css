@@ -6,6 +6,9 @@
 .login
   button:hover{
       color: blue;
+  
   }
+login {
+  background-color: #6e0238;
 
-
+}
