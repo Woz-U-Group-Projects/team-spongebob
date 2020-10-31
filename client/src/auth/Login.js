@@ -3,6 +3,7 @@ import { Link, Redirect } from 'react-router-dom'
 import axios from 'axios'
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.min.css'
+import './Login.css'
 
 //IMPORT COMPONENTS
 import Layout from '../components/Layout'
@@ -47,7 +48,7 @@ const Login = () => {
 // REGISTRATION FORM
   const loginForm = () => (
     
-    <div className="ui text container">
+    <div className="ui text margin container">
       <div className="ui middle aligned center aligned grid">
         <div className="column">
           <h2 className="ui header">
