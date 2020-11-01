@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Link, Redirect } from 'react-router-dom'
 import axios from 'axios'
+import { authenticate, isAuth } from './helpers'
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.min.css'
 
@@ -33,8 +34,10 @@ const Login = () => {
       .then(response => {
         console.log('LOGIN SUCCESS', response);
         //SAVE RESPONSE (user, token) localstorage/cookie
-        setValues({ ...values, name: '', email: '', password: '', buttonText: 'Logged In ...' });
-        toast.success(`Welcome ${response.data.user.name}`);
+        authenticate(response, () => {
+          setValues({ ...values, name: '', email: '', password: '', buttonText: 'Logged In ...' });
+          toast.success(`Welcome ${response.data.user.name}`);
+        })
       })
       .catch(error => {
         console.log('LOGIN ERROR', error.response.data);
@@ -83,6 +86,7 @@ const Login = () => {
   return (
     <Layout>
       <ToastContainer />
+      {isAuth() ? <Redirect to='/' /> : null}
        {loginForm()}
       
     </Layout>
