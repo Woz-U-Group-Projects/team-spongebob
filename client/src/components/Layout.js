@@ -36,11 +36,18 @@ const Layout = ({children, match, history}) => {
                 MyCloset
               </Link>
 
-              <li className='ui item' onClick={() => {
-                logout(() => {
-                  history.push('/')
-                })
-              }}>logout</li>
+              <li className='ui item'
+                  style={{ cursor: 'pointer' }}
+                  onClick={() => {
+                  logout(() => {
+                    history.push('/')
+                  })
+              }}><i className="power off icon"></i></li>
+
+              <li className="ui item image label">
+                <div className="details">{isAuth().name}</div>
+                <div className="detail">Subscriber</div>
+              </li>
             </Fragment>
           </div>
         )}

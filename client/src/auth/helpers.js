@@ -41,7 +41,7 @@ export const removeLocalStorage = (key) => {
 
 // AUTHENTICATE USER
 export const authenticate = (response, next) => {
-  console.log('AUTHENTICATE ON SIGNIN', response)
+  console.log('AUTHENTICATE ON LOGIN', response)
   setCookie('token', response.data.token)
   setLocalStorage('user', response.data.user)
   next()
@@ -61,7 +61,7 @@ export const isAuth = () => {
   }
 }
 
-
+//LOGOUT 
 export const logout = next => {
   removeCookie('token')
   removeLocalStorage('user')
