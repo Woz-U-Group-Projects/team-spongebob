@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Link, Redirect } from 'react-router-dom'
 import axios from 'axios'
+import { isAuth } from './helpers'
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.min.css'
 
@@ -92,6 +93,9 @@ const Registration = () => {
   return (
     <Layout>
       <ToastContainer />
+      
+      {isAuth() ? <Redirect to='/' /> : null}
+
        {registrationForm()}
       
     </Layout>
