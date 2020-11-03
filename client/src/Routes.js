@@ -6,6 +6,8 @@ import App from './App'
 import Login from './auth/Login'
 import Registration from './auth/Registration'
 import Activate from './auth/Activate'
+import Private from './components/Private'
+import PrivateRoute from './auth/PrivateRoute'
 
 
 const Routes = () => {
@@ -16,6 +18,7 @@ const Routes = () => {
         <Route path='/registration' exact component={Registration} />
         <Route path='/login' exact component={Login} />
         <Route path='/auth/activate/:token' exact component={Activate} />
+        <PrivateRoute path='/private' exact component={Private} />
       </Switch>
     </BrowserRouter>
   )
