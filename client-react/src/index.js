@@ -14,8 +14,8 @@ import { Select } from 'react-inputs-validation';
   optionList={[
     { id: 'shirt', name: 'shirt' },
     { id: 'pants', name: 'pants' },
-    { id: 'shoes', name: 'shoes' }
-    { id: 'skirt', name: 'skirt' }
+    { id: 'shoes', name: 'shoes' },
+    { id: 'skirt', name: 'skirt' },
     { id: 'accessories', name: 'accessories' }
   ]}
   customStyleContainer={{
@@ -62,7 +62,7 @@ import { Select } from 'react-inputs-validation';
   }}
   value={size} // Optional.[String].Default: "".
   optionList={[
-    { id: '', name: 'Please Select a size },
+    { id: '', name: 'Please Select a size' },
     { id: 'SM', name: 'Small' },
     { id: 'MD', name: 'Medium' },
     { id: 'LG', name: 'Large' },
@@ -92,12 +92,33 @@ import { Select } from 'react-inputs-validation';
 // );
 // };
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+// ReactDOM.render(
+//   <React.StrictMode>
+//     <App />
+//   </React.StrictMode>,
+//   document.getElementById('root')
+// );
+
+const App = props => {
+  return (
+    <div>
+      <Hello name="Nikki" />
+      <Hello name="Michael" />
+      <Hello name="Andrew" />
+    </div>
+  );
+};
+
+const Hello = props => (
+  <div>
+    <h1>Hello, {props.name}!</h1>
+  </div>
 );
+
+ReactDOM.render(
+<App />, 
+document.getElementById('root'));
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
