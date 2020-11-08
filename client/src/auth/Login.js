@@ -86,7 +86,7 @@ const Login = () => {
   return (
     <Layout>
       <ToastContainer />
-      {isAuth() ? <Redirect to='/' /> : null}
+      {isAuth() ? <Redirect to='/private' /> : null}
        {loginForm()}
       
     </Layout>

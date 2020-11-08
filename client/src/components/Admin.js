@@ -2,10 +2,10 @@ import React from 'react'
 import Layout from '../components/Layout'
 
 
-const Private = () => {
+const Admin = () => {
   return (
     <Layout>
-      <h1>Private Page</h1>
+      <h1>Admin Page</h1>
     </Layout>
   )
   
@@ -13,4 +13,4 @@ const Private = () => {
 
 
 
-export default Private
+export default Admin

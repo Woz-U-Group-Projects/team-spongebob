@@ -4,10 +4,10 @@ import {isAuth} from './helpers'
 
 
 
-const PrivateRoute = ({component: Component, ...rest}) => (
+const AdminRoute = ({component: Component, ...rest}) => (
 
   <Route {...rest} render={
-    props => isAuth() && isAuth().role === 'subscriber' ? (<Component {...props} />) : (<Redirect to={{
+    props => isAuth() && isAuth().role === 'admin' ? (<Component {...props} />) : (<Redirect to={{
       pathname: '/login',
       state: {from:props.location}
     }}/> )
@@ -17,4 +17,4 @@ const PrivateRoute = ({component: Component, ...rest}) => (
 )
 
 
-export default PrivateRoute
+export default AdminRoute
