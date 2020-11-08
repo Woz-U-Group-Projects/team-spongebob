@@ -73,7 +73,7 @@ const Login = () => {
                 <input type="password" onChange={handleChange('password')} value={password} placeholder="Password" />
               </div>
             </div>
-            <div className="ui fluid large submit button" onClick={clickSubmit}>{buttonText}</div>
+            <div className="ui fluid blue inverted large submit button" onClick={clickSubmit}>{buttonText}</div>
           </div>
         </form>
           <div className="ui message">
