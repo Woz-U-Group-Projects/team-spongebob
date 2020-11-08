@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Link, Redirect } from 'react-router-dom'
+//import { Link, Redirect } from 'react-router-dom'
 import axios from 'axios'
 import jwt from 'jsonwebtoken'
 import { ToastContainer, toast } from 'react-toastify'
@@ -26,7 +26,7 @@ const Activate = ({match}) => {
     }
   }, []) // eslint-disable-line react-hooks/exhaustive-deps
 
-  const { name, token, show } = values
+  const { name, token } = values
 
 
   const clickSubmit = e => {
