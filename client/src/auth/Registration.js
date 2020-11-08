@@ -5,7 +5,8 @@ import { isAuth } from './helpers'
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.min.css'
 
-
+//CSS Import
+import './Registration.css'
 
 
 //IMPORT COMPONENTS
@@ -51,7 +52,7 @@ const Registration = () => {
 // REGISTRATION FORM
   const registrationForm = () => (
     
-    <div className="ui text container">
+    <div className="ui text container mT">
       <div className="ui middle aligned center aligned grid">
         <div className="column">
           <h2 className="ui header">

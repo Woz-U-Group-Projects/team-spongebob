@@ -2,6 +2,9 @@ import React, { Fragment } from 'react'
 import { Link, withRouter } from 'react-router-dom'
 import { isAuth, logout } from '../auth/helpers'
 
+//CSS Import
+import './Layout.css'
+
 const Layout = ({children, match, history}) => {
 
   const isActive = path => {
@@ -42,7 +45,7 @@ const Layout = ({children, match, history}) => {
                   logout(() => {
                     history.push('/')
                   })
-              }}><i className="power off icon"></i></li>
+              }}>Logout</li>
 
               <li className="ui item image label">
                 <div className="details">{isAuth().name}</div>

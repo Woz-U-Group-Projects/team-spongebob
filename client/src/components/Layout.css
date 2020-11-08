@@ -1,0 +1,7 @@
+.ui.secondary.pointing.menu {
+  border-bottom: none;
+}
+
+.ui.secondary.pointing.menu .item {
+  margin: 3px 5px -2px;
+}
