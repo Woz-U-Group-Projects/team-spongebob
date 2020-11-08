@@ -84,7 +84,7 @@ const Registration = () => {
           </div>
         </form>
           <div className="ui message">
-          Already have an account <Link to="/login">Login</Link>
+          Already have an account? <Link to="/login">Login</Link>
         </div>
         </div>
       </div>
