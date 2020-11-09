@@ -12,24 +12,36 @@ const Landing = () => {
       <div><img src= "../../src/assets/hangers-medium.jpeg"></img></div>
           <div className="ui text container">
           </div>
-          
+        
      </div>
+    
+    </div>
+    </div>
+    
+    <br>
+    </br>
+    <br>
+    </br>
+      <br>
+      </br>
+      <br>
+      </br>
+      <br>
+      </br>
+       <h1>Closet Space</h1>
+  <h1>Organize your wardrobe!</h1> 
 
-    </div>
-    </div>
-    <br>
-    </br>
-    <br>
-    </br>
-      <br>
-      </br>
-      <br>
-      </br>
-      <br>
-      </br>
-  <h1>Closet Space</h1>
-      </div>
+<button class="ui circular facebook icon button">
+  <i class="facebook icon"></i>
+</button>
+<button class="ui circular twitter icon button">
+  <i class="twitter icon"></i>
+</button>
+<button class="ui circular instagram icon button">
+  <i class="instagram icon"></i></button>
+
+</div>
     
   )        
-}            
-export default Landing;
+}           
+export default Landing
