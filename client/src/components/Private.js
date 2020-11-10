@@ -1,11 +1,12 @@
 import React from 'react'
 import Layout from '../components/Layout'
+import UserProfile from './UserProfile'
 
 
 const Private = () => {
   return (
     <Layout>
-      <h1>Private Page</h1>
+      <UserProfile />
     </Layout>
   )
   
