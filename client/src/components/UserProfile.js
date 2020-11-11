@@ -8,26 +8,19 @@ import './UserProfile.css'
 const UserProfile = () => {
   return (
     <Fragment>
-    <div className="row gutters-sm">
-      <div className="col-md-4 mb-3">
-       <div className="card">
-        <div className="card-body">
-         <div className="d-flex flex-column align-items-center text-center">
-           <div className="ui small image">
-             <img src="https://via.placeholder.com/150.png" alt="user" />
-             <div className="mt-3">
-               <h4>{isAuth().name}</h4>
-               <p className="text-secondary mb-1">Job Description</p>
-               <p className="text-muted font-size-sm">Maybe an address</p>
-               <button className="medium ui button">Edit</button>
-             </div>
-           </div>
-         </div>
+      <div className="container">
+        <div className="page-heading">
+          <div className="media clearfix">
+            <div className="media-left p30">
+              <img src="https://via.placeholder.com/128.png" alt="user" className="img-fluid rounded-circle mb-2"/>
+            </div>
+            <div className="media-body va-m">
+              <h2 className="media-heading">{isAuth().name} <small>- {isAuth().role}</small></h2>
+            </div>
+          </div>
         </div>
-       </div>
       </div>
-    </div>
-  </Fragment>
+    </Fragment>
   )
   
 }
