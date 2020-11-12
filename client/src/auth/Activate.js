@@ -49,13 +49,34 @@ const Activate = ({match}) => {
 };
 
 const activationLink = () => (
-  <div>
-    <h1> Hey {name}, Activate your account</h1>
-    <div className="ui fluid large submit button" onClick={clickSubmit}>Activate Account</div>
-  </div>
+
+    <div class="container h-100">
+    	<div class="row h-100">
+			  <div class="col-sm-10 col-md-8 col-lg-6 mx-auto d-table h-100">
+					<div class="d-table-cell align-middle">
+						<div class="text-center mt-4">
+							<h1 class="h2"> {name}, Please Activate Account</h1>
+						</div>
+						<div class="card">
+							<div class="card-body">
+								<div class="m-sm-4">
+									<form>
+                    <div class="form-group">
+                    <div class="text-center mt-3">
+                    <div className="ui fluid large submit button" onClick={clickSubmit}>Activate Account</div>
+                    </div>
+                    </div>
+									</form>
+								</div>
+					    </div>
+				    </div>
+			    </div>
+        </div>
+      </div>
+    </div>
 )
 
-//CREATE A VISUAL TO DISPLAY ACTIVATION
+ //CREATE A VISUAL TO DISPLAY ACTIVATION
 
   return (
     <Layout>
