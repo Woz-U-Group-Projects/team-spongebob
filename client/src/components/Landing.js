@@ -18,18 +18,9 @@ const Landing = () => {
     </div>
     </div>
     
-    <br>
-    </br>
-    <br>
-    </br>
-      <br>
-      </br>
-      <br>
-      </br>
-      <br>
-      </br>
+  
        <h1>Closet Space</h1>
-  <h1>Organize your wardrobe!</h1> 
+   
 
 <button class="ui circular facebook icon button">
   <i class="facebook icon"></i>
