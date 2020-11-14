@@ -2,6 +2,10 @@ import React, { Fragment } from 'react'
 import { Link, withRouter } from 'react-router-dom'
 import { isAuth, logout } from '../auth/helpers'
 
+//Logo Import
+//import Logo from '../assets/images/PurpleLogo.png'
+
+
 //CSS Import
 import './Layout.css'
 
@@ -17,6 +21,9 @@ const Layout = ({children, match, history}) => {
 
   const nav = () => (
     <div className="ui secondary pointing menu">
+      <Link to="/" className="ui item">
+        ClosetSpace
+      </Link>
       <div className="right menu">
         {!isAuth() && (
           <Fragment>
