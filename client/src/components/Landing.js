@@ -23,9 +23,26 @@ const Landing = () => {
         <img src="..." className="d-block w-100" alt="..."/>
       </div>
       </div>
+      <div className="container"></div>
+          <div className="row"></div>
+            <div className= "col-sm"></div>
+            <div className= "col-sm"></div>
+            <div className= "col-sm"></div>
+            <div className= "col-sm"></div>
+            <div className= "col-sm"></div>
 
+      <div className= "container"></div>
+          <div className="row"></div>
+             <div className= "col-sm"></div>
+             <div className= "col-sm"></div>
 
+      <div className= "container"></div>   
+          <div className="row"></div>
+             <div className= "col-sm"></div>
+             <div className= "col-sm"></div>
+             <div className= "col-sm"></div>
 
+      
     </Fragment>
   )
 }
