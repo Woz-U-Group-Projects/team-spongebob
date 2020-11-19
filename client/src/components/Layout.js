@@ -69,7 +69,7 @@ const Layout = ({children, match, history}) => {
   return (
     <Fragment>
       {nav()}
-      <div className="container">{children}</div>
+      <div>{children}</div>
       
     </Fragment>
   )
