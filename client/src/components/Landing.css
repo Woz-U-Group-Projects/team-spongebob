@@ -1,0 +1,131 @@
+.Header{
+font-family: AvenirNext-Regular;
+font-size: 24px;
+color: #FFFFFF;
+text-align: center;
+}
+
+
+.Carousel{
+background: #D8D8D8;
+font-family: AvenirNext-Bold;
+font-size: 60px;
+color: #FFFFFF;
+letter-spacing: 2.6px;
+text-shadow: 0 2px 4px rgba(0,0,0,0.50);
+font-family: AvenirNext-UltraLight;
+font-size: 36px;
+color: #FFFFFF;
+letter-spacing: 0;
+line-height: 42px;
+text-shadow: 0 2px 4px rgba(0,0,0,0.50);
+background: #FFFFFF;
+border: 1px solid #FFFFFF;
+border: 1px solid #FFFFFF;
+border: 1px solid #FFFFFF;
+border: 1px solid #FFFFFF;
+}
+.QuoteSection{
+background: #D8D8D8;
+background-image: linear-gradient(6deg, #100225 27%, #4D3D9B 75%, #5457A9 100%);
+opacity: 0.07;
+background-image: linear-gradient(6deg, #100225 27%, #4D3D9B 75%, #5457A9 100%);
+font-family: AvenirNext-UltraLight;
+font-size: 36px;
+color: #FFFFFF;
+letter-spacing: 0;
+line-height: 42px;
+text-shadow: 0 2px 4px rgba(0,0,0,0.50);
+font-family: AvenirNext-Bold;
+font-size: 35px;
+color: #FFFFFF;
+letter-spacing: 2.53px;
+line-height: 42px;
+font-family: AvenirNext-BoldItalic;
+font-size: 72px;
+color: #FFFFFF;
+letter-spacing: 5.2px;
+text-align: center;
+line-height: 42px;
+font-family: AvenirNext-BoldItalic;
+font-size: 72px;
+color: #FFFFFF;
+letter-spacing: 5.2px;
+text-align: center;
+line-height: 42px;}
+
+.CTASection{
+font-family: AvenirNext-Bold;
+font-size: 36px;
+color: #FFFFFF;
+letter-spacing: 2.6px;
+line-height: 42px;
+font-family: AvenirNext-Regular;
+font-size: 28px;
+color: #FFFFFF;
+letter-spacing: 0;
+line-height: 37px;
+box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+background: #6577C4;
+border-radius: 1px;
+font-family: AvenirNext-Regular;
+font-size: 36px;
+color: #FFFFFF;
+text-align: center;
+background: #6577C4;
+border-radius: 1px;
+font-family: AvenirNext-Regular;
+font-size: 36px;
+color: #FFFFFF;
+text-align: center;
+background: #6577C4;
+border-radius: 1px;
+font-family: AvenirNext-Regular;
+font-size: 36px;
+color: #FFFFFF;
+text-align: center;}
+
+.Footer{
+background: #ABDEF3;
+font-family: AvenirNext-Bold;
+font-size: 36px;
+color: #FFFFFF;
+letter-spacing: 2.6px;
+text-align: center;
+line-height: 42px;
+border: 3px solid #FFFFFF;
+font-family: AvenirNext-Medium;
+font-size: 21px;
+color: #FFFFFF;
+font-family: AvenirNext-Medium;
+font-size: 21px;
+color: #FFFFFF;
+font-family: AvenirNext-Medium;
+font-size: 21px;
+color: #FFFFFF;
+border: 3px solid #FFFFFF;
+border: 3px solid #FFFFFF;
+background: #6577C4;
+border-radius: 1px;
+font-family: AvenirNext-Regular;
+font-size: 21px;
+color: #FFFFFF;
+text-align: center;
+font-family: AvenirNext-Regular;
+font-size: 14px;
+color: #FFFFFF;
+letter-spacing: 0;
+text-align: center;
+line-height: 37px;
+font-family: AvenirNext-Regular;
+font-size: 24px;
+color: #FFFFFF;
+letter-spacing: 0;
+line-height: 37px;
+background: #6577C4;
+background: #6577C4;
+background: #6577C4;}
+
+.pink{
+    background-color: pink;
+}
