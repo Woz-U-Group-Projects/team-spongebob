@@ -41,20 +41,37 @@ const Landing = () => {
           <div className="col-sm">col-sm</div>
         </div>
 
-      <div className="container"></div>
-        <div className="row">
-
-          <div className="col-sm">col-sm</div>
-
+      <div className="row"></div>
+          <div className="col"></div>
+            <div className="col-lg"></div>
 
       <div className="container"></div>
         <div className="row">
 
-          <div className="col-sm">col-sm</div>
-          <div className="col-sm">col-sm</div>
-        </div>
+          <div className="col-lg">col-sm</div>
+      <div>
+      </div>
+      <div>
+      </div>
+      <div className= "row"></div>
+          <div className="col"></div>
+            <div className= "col-sm-5"></div>
+            <div className= "col-sm-5"></div>
 
-      <div className="container"></div>  
+      <div className="container"></div>
+          <div className="row">
+
+          <div className="col-sm">col-sm</div>
+          <div className="col-sm">col-sm</div>
+      </div>
+
+      <div className= "row"></div>   
+          <div className="col"></div>
+          <div className= "col-sm-5"></div>
+          <div className= "col-sm-5"></div>
+          <div className= "col-sm-5"></div>
+      
+<div className="container"></div>  
       <div className="row">
 
           <div className="col-sm">col-sm</div>
@@ -63,16 +80,8 @@ const Landing = () => {
         </div>
         </div>
 
-     <div className= "row"></div>
-          <div className="col"></div>
-             <div className= "col-sm-5"></div>
-             <div className= "col-sm-5"></div>
+     
 
-      <div className= "row"></div>   
-          <div className="col"></div>
-             <div className= "col-sm"></div>
-             <div className= "col-sm"></div>
-             <div className= "col-sm"></div>
       
       
     </Fragment>

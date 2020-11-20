@@ -128,4 +128,7 @@ background: #6577C4;}
 
 .pink{
     background-color: pink;
+}.row div {
+    border: 1px solid black;
+    background-color: lightseagreen;
 }
