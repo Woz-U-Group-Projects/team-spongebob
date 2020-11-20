@@ -1,12 +1,15 @@
 import React from 'react'
 import Layout from '../components/Layout'
+import MyClosetCollection from './MyClosetCollection'
+
+
 
 
 const Mycloset = () => {
   return (
     <Layout>
       <div className="container">
-        <h1>My Closet Page</h1>
+        <MyClosetCollection />
       </div>
     </Layout>
   )

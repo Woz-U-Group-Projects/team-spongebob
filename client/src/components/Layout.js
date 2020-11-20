@@ -82,3 +82,5 @@ export default withRouter(Layout)
 // <Link to="/shop" className="ui item" style={isActive('/shop')}>
 // Shop
 // </Link>
+
+// Change color of Navigation when authenticated
