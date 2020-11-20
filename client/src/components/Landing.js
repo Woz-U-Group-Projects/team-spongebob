@@ -23,62 +23,32 @@ const Landing = () => {
         <img src="..." className="d-block w-100" alt="..."/>
       </div>
       </div>
-      <div className="row"></div>
-          <div className="col"></div>
-            <div className= "col-sm"></div>
-            <div className= "col-sm"></div>
-            <div className= "col-sm"></div>
-            <div className= "col-sm"></div>
-            <div className= "col-sm"></div>
-     
-      <div class="container"></div>
-        <div class="row">
+         
+    <div class="container">
+    <div class="row">
+        <div className="col">One of five columns</div>
+        <div className="col">One of five columns</div>
+        <div className="col">One of five columns</div>
+        <div className="col">One of five columns</div>
+        <div className="col">One of five columns</div>
+    </div>
+    <div class="row">
+        <div className="col">One column</div>
+    </div>
+    <div class="row">
+        <div className="col">One of two columns</div>
+        <div className="col">One of two columns</div>
+    </div>
+    <div class="row">
+        <div className="col">One of three columns</div>
+        <div className="col">One of three columns</div>
+        <div className="col">One of three columns</div>
+    </div>
+    </div>
 
-          <div className="col-sm">col-sm</div>
-          <div className="col-sm">col-sm</div>
-          <div className="col-sm">col-sm</div>
-          <div className="col-sm">col-sm</div>
-          <div className="col-sm">col-sm</div>
-        </div>
 
-      <div className="row"></div>
-          <div className="col"></div>
-            <div className="col-lg"></div>
 
-      <div className="container"></div>
-        <div className="row">
 
-          <div className="col-lg">col-sm</div>
-      <div>
-      </div>
-      <div>
-      </div>
-      <div className= "row"></div>
-          <div className="col"></div>
-            <div className= "col-sm-5"></div>
-            <div className= "col-sm-5"></div>
-
-      <div className="container"></div>
-          <div className="row">
-
-          <div className="col-sm">col-sm</div>
-          <div className="col-sm">col-sm</div>
-      </div>
-
-      <div className= "row"></div>   
-          <div className="col"></div>
-          <div className= "col-sm-5"></div>
-          <div className= "col-sm-5"></div>
-          <div className= "col-sm-5"></div>
-      
-<div className="container"></div>  
-      <div className="row">
-
-          <div className="col-sm">col-sm</div>
-          <div className="col-sm">col-sm</div>
-          <div className="col-sm">col-sm</div>
-        </div>
-        </div>
 
      
 
