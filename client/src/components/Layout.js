@@ -66,10 +66,20 @@ const Layout = ({children, match, history}) => {
   )
 
 
+  const footer = () => (
+    <div className="footer">
+      <div className="ui vertical segment">
+      <p>Built by Team Spongebob.</p>
+      </div>
+    </div>
+  )
+
+
   return (
     <Fragment>
       {nav()}
       <div>{children}</div>
+      {footer()}
       
     </Fragment>
   )

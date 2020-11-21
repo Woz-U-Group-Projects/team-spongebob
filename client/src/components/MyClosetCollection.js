@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import MyClosetCards from './MyClosetCards'
 
@@ -9,10 +10,10 @@ const MyClosetCollection = props => {
       <h3>Shirts</h3>
       <div className="row">
         <div className="col-3">
-          <MyClosetCards
+          <Link to="/tshirts" ><MyClosetCards
             type="T-Shirts"
             numItems="101 Items"
-           />
+           /></Link>
         </div>
         <div className="col-3">
           <MyClosetCards
