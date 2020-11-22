@@ -22,10 +22,10 @@ const items = [
   },
   {
     id: 3,
-    brand: "FUBU",
+    brand: "Hanes",
     size: "XL",
     color: "Black",
-    type: "Polos"
+    type: "T-Shirt"
   },
   {
     id: 4,
@@ -38,8 +38,8 @@ const items = [
     id: 5,
     brand: "Jordans",
     size: "Med",
-    color: "Black",
-    type: "Sweatshirt"
+    color: "White",
+    type: "Hoodie"
   },
   {
     id: 6,

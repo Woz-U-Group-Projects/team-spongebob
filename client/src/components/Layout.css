@@ -5,13 +5,3 @@
 .ui.secondary.pointing.menu .item {
   margin: 3px 5px -2px;
 }
-
-.footer{
-  margin-top: 1rem;
-  padding: 1rem;
-  background-color: #FFFFFF;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-}
