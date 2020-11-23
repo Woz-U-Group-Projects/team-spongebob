@@ -3,20 +3,20 @@ import "./Landing.css"
 
 const Landing = () => {
 
-  return (
-<<<<<<< HEAD
+  return 
     <Fragment>
-      <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
-        <ol className="carousel-indicators">
+      <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel"></div>
+        <ol className="carousel-indicators"></ol>
+          
+        
           <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-      <div className="carousel-inner">
-        <div className="carousel-item active">
+        
+      <div className="carousel-inner"></div>
+        <div className="carousel-item active"></div>
           <img src="..." className="d-block w-100" alt="..."/>
-=======
-    <>
+    
     <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
       <ol className="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
@@ -30,7 +30,6 @@ const Landing = () => {
               <h3>First Slide</h3>
               <p>Put something awsome here</p>
           </div>
->>>>>>> 5efbc781a7da33ccec52ffa5665e8b99c241cd13
         </div>
         <div className="carousel-item">
           <img src="..." className="d-block w-100" alt="..." />
@@ -56,7 +55,7 @@ const Landing = () => {
       </div>
       </div>
          
-    <div class="container">
+    <div class="container"></div>
     <div class="row">
         <div className="col">One of five columns</div>
         <div className="col">One of five columns</div>
@@ -71,34 +70,20 @@ const Landing = () => {
         <div className="col">One of two columns</div>
         <div className="col">One of two columns</div>
     </div>
-<<<<<<< HEAD
     <div class="row">
         <div className="col">One of three columns</div>
         <div className="col">One of three columns</div>
         <div className="col">One of three columns</div>
     </div>
-    </div>
-
-
-
-
-
-     
-=======
+    
+   
     <div className="container">
-      <div className="row">
+     </div>
+      <div className="row"></div>
         <div className="col-sm"></div>
         <div className="col-sm"></div>
-      </div>
-    </div>
 
-    </>
-  );
->>>>>>> 5efbc781a7da33ccec52ffa5665e8b99c241cd13
-
-      
-      
     </Fragment>
-  )
-  }
+  
+}
 export default Landing;
