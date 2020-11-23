@@ -79,6 +79,16 @@ const Landing = () => {
     <div className="col"></div>
       <input type="text" class="form-control" placeholder="Last name"></input>
     <div className="col">One of three columns</div>
+
+
+    <div className="col"></div>
+                <label for="text">Email:</label>
+                <input type="text" class="form-control" id="input4" placeholder="example@email.com"></input>
+            
+            <button class="btn btn-primary">Subscribe</button>
+
+
+
     
     <div className="container">
      </div>
