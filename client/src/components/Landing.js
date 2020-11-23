@@ -3,7 +3,7 @@ import "./Landing.css"
 
 const Landing = () => {
 
-  return 
+  return (
     <Fragment>
       <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel"></div>
         <ol className="carousel-indicators"></ol>
@@ -70,13 +70,16 @@ const Landing = () => {
         <div className="col">One of two columns</div>
         <div className="col">One of two columns</div>
     </div>
-    <div class="row">
-        <div className="col">One of three columns</div>
-        <div className="col">One of three columns</div>
-        <div className="col">One of three columns</div>
-    </div>
+    <div class="row"></div>
+        <div className="col">NEWSLETTER SIGNUP</div>
+        <div className="col">One of three columns</div><div class="row"></div>
+    <div className="col"></div>
+      <input type="text" class="form-control" placeholder="First name"></input>
     
-   
+    <div className="col"></div>
+      <input type="text" class="form-control" placeholder="Last name"></input>
+    <div className="col">One of three columns</div>
+    
     <div className="container">
      </div>
       <div className="row"></div>
@@ -84,6 +87,6 @@ const Landing = () => {
         <div className="col-sm"></div>
 
     </Fragment>
-  
+  ) 
 }
 export default Landing;
