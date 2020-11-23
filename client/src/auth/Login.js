@@ -5,6 +5,9 @@ import { authenticate, isAuth } from './helpers'
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.min.css'
 
+//CSS Import
+import './Login.css'
+
 //IMPORT COMPONENTS
 import Layout from '../components/Layout'
 
@@ -50,7 +53,7 @@ const Login = () => {
 // REGISTRATION FORM
   const loginForm = () => (
     
-    <div className="ui text container">
+    <div className="ui text container mT">
       <div className="ui middle aligned center aligned grid">
         <div className="column">
           <h2 className="ui header">
@@ -86,7 +89,7 @@ const Login = () => {
   return (
     <Layout>
       <ToastContainer />
-      {isAuth() ? <Redirect to='/' /> : null}
+      {isAuth() ? <Redirect to='/mycloset' /> : null}
        {loginForm()}
       
     </Layout>

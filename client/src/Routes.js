@@ -7,7 +7,11 @@ import Login from './auth/Login'
 import Registration from './auth/Registration'
 import Activate from './auth/Activate'
 import Private from './components/Private'
+import Admin from './components/Admin'
 import PrivateRoute from './auth/PrivateRoute'
+import AdminRoute from './auth/AdminRoute'
+import Mycloset from './components/Mycloset'
+import TShirts from './components/TShirts'
 
 
 const Routes = () => {
@@ -19,6 +23,9 @@ const Routes = () => {
         <Route path='/login' exact component={Login} />
         <Route path='/auth/activate/:token' exact component={Activate} />
         <PrivateRoute path='/private' exact component={Private} />
+        <PrivateRoute path='/mycloset' exact component={Mycloset} />
+        <PrivateRoute path='/tshirts' exact component={TShirts} />
+        <AdminRoute path='/admin' exact component={Admin} />
       </Switch>
     </BrowserRouter>
   )

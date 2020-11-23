@@ -1,12 +1,11 @@
 import React from 'react'
 import Layout from '../components/Layout'
-import UserProfile from './UserProfile'
 
 
-const Private = () => {
+const Admin = () => {
   return (
     <Layout>
-      <UserProfile />
+      <h1>Admin Page</h1>
     </Layout>
   )
   
@@ -14,4 +13,4 @@ const Private = () => {
 
 
 
-export default Private
+export default Admin

@@ -2,6 +2,13 @@ import React, { Fragment } from 'react'
 import { Link, withRouter } from 'react-router-dom'
 import { isAuth, logout } from '../auth/helpers'
 
+//Logo Import
+//import Logo from '../assets/images/PurpleLogo.png'
+
+
+//CSS Import
+import './Layout.css'
+
 const Layout = ({children, match, history}) => {
 
   const isActive = path => {
@@ -14,6 +21,9 @@ const Layout = ({children, match, history}) => {
 
   const nav = () => (
     <div className="ui secondary pointing menu">
+      <Link to="/" className="ui item">
+        ClosetSpace
+      </Link>
       <div className="right menu">
         {!isAuth() && (
           <Fragment>
@@ -29,7 +39,7 @@ const Layout = ({children, match, history}) => {
           </Fragment>
         )}
 
-        {isAuth() && (
+        {isAuth() && isAuth().role === 'subscriber' && (
           <div className="right menu">
             <Fragment>
               <Link to="/mycloset" className="ui item" style={isActive('/mycloset')}>
@@ -42,11 +52,11 @@ const Layout = ({children, match, history}) => {
                   logout(() => {
                     history.push('/')
                   })
-              }}><i className="power off icon"></i></li>
+              }}>Logout</li>
 
               <li className="ui item image label">
                 <div className="details">{isAuth().name}</div>
-                <div className="detail">Subscriber</div>
+                <div className="detail">{isAuth().role}</div>
               </li>
             </Fragment>
           </div>
@@ -56,10 +66,11 @@ const Layout = ({children, match, history}) => {
   )
 
 
+
   return (
     <Fragment>
       {nav()}
-      <div className="container">{children}</div>
+      <div>{children}</div>
       
     </Fragment>
   )
@@ -72,3 +83,5 @@ export default withRouter(Layout)
 // <Link to="/shop" className="ui item" style={isActive('/shop')}>
 // Shop
 // </Link>
+
+// Change color of Navigation when authenticated
