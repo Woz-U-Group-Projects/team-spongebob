@@ -3,32 +3,37 @@ import React from "react";
 
 import './Landing.css'
 
+
+// IMAGE IMPORT
 import img from '../assets/images/square-image.png'
+import Upload from '../assets/images/Upload.png'
+import Save from '../assets/images/Save.png'
+import Plan from '../assets/images/Plan.png'
+import Manage from '../assets/images/Manage.png'
+import Categorize from '../assets/images/Categorize.png'
+
+import Header1 from '../assets/images/Header-Image 1.png'
+import Header2 from '../assets/images/Header-Image 2.png'
+import Astronaut from '../assets/images/Astronaut.png'
+import Phones_App from '../assets/images/Phones_App.png'
+
 
 
 const Landing = () => {
   
   return (
     <>
-    <div id="carouselExampleIndicators" className="carousel slide tp" data-ride="carousel">
+    <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
       <ol className="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
       </ol>
       <div className="carousel-inner">
         <div className="carousel-item active">
-           <img src="..." className="d-block w-100" alt="..." />
-           <div className="carousel-caption d-non d-md-block">
-              <h3>First Slide</h3>
-              <p>Put something awsome here</p>
-          </div>
+          <img src={Header1} className="d-block w-100" alt="..." />
         </div>
         <div className="carousel-item">
-          <img src="..." className="d-block w-100" alt="..." />
-        </div>
-        <div className="carousel-item">
-          <img src="..." className="d-block w-100" alt="..." />
+          <img src={Header2} className="d-block w-100" alt="..." />
         </div>
       </div>
     </div>
@@ -39,27 +44,27 @@ const Landing = () => {
         </div>
         <div className="col col-sm">
           <div className="ui small image">
-            <img src={img} alt="img"></img>
+            <img src={Upload} alt="img"></img>
           </div>
         </div>
         <div className="col col-sm">
           <div className="ui small image">
-            <img src={img} alt="img"></img>
+            <img src={Categorize} alt="img"></img>
           </div>
         </div>
         <div className="col col-sm">
           <div className="ui small image">
-            <img src={img} alt="img"></img>
+            <img src={Save} alt="img"></img>
           </div>
         </div>
         <div className="col col-sm">
           <div className="ui small image">
-            <img src={img} alt="img"></img>
+            <img src={Plan} alt="img"></img>
           </div>
         </div>
         <div className="col col-sm">
           <div className="ui small image">
-            <img src={img} alt="img"></img>
+            <img src={Manage} alt="img"></img>
           </div>
         </div>
       </div>
@@ -67,26 +72,23 @@ const Landing = () => {
           <h1>YOUR WARDROBE COLLECTION</h1>
         </div>
     </div>
-    <div className="container-fluid tp">
+    <div className="container-fluid">
       <div className="row">
-        <div className="col col-sm">
-        <div className="container-fluid">
-        <div className="container">
-          <p className="display-4"><i className="quote left icon"></i>Easily add clothes to your virtual closet by importing from your gallery.<i className="quote left icon"></i></p>
-          <h2 className="display-6">Clothes Freak</h2>
-        </div>
-      </div>
-        </div>
-        <div className="col col-sm"></div>
-        
+        <img src={Astronaut} className="d-block w-100" alt="..." />
       </div>
     </div>
     <div className="container-fluid">
       <div className="row tp">
-        <div className="col col-6-sm col-6-md col-sm"></div>
         <div className="col col-6-sm col-6-md col-sm">
           <div className="container-fluid">
             <div className="container">
+              <img src={Phones_App} className="phone-img d-block w-100 img-fluid" alt="..." />
+            </div>
+          </div>
+        </div>
+        <div className="col col-6-sm col-6-md col-sm">
+          <div className="container-fluid">
+            <div className="container mt">
               <h2 className="display-4">MANAGING YOUR OWN CLOSET HAD NEVER BEEN SO SIMPLE!</h2>
               <p className="lead">Easily add clothes to your virtual closet by importing from your gallery.</p>
             </div>
