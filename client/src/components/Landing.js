@@ -68,33 +68,43 @@ const Landing = () => {
     </div>
     <div class="row">
         <div className="col">One of two columns</div>
-        <div className="col">One of two columns</div>
+        <div className="col">MANAGING YOUR OWN CLOSET HAS NEVER BEEN SO SIMPLE!</div>
+      
     </div>
     <div class="row"></div>
-        <div className="col">NEWSLETTER SIGNUP</div>
-        <div className="col">One of three columns</div><div class="row"></div>
+        <div className="col-md-6"></div>
+        <h2>NEWSLETTER SIGNUP</h2>
+        <div className="col">One of three containers</div><div class="row"></div>
     <div className="col"></div>
       <input type="text" class="form-control" placeholder="First name"></input>
     
     <div className="col"></div>
       <input type="text" class="form-control" placeholder="Last name"></input>
-    <div className="col">One of three columns</div>
-
-
-    <div className="col"></div>
-                <label for="text">Email:</label>
-                <input type="text" class="form-control" id="input4" placeholder="example@email.com"></input>
+   
+    <div className="form-row align-items-center"></div>
+                <label for="text"></label>
+                <input type="text" class="form-control" id="input4" placeholder="Email Address"></input>
             
             <button class="btn btn-primary">Subscribe</button>
+            <p></p>
+    <div className="col">One of three containers</div>
 
-
-
-    
     <div className="container">
      </div>
       <div className="row"></div>
         <div className="col-sm"></div>
         <div className="col-sm"></div>
+
+
+<button class="ui circular facebook icon button">
+  <i class="facebook icon"></i>
+</button>
+<button class="ui circular instagram icon button">
+  <i class="instagram icon"></i>
+</button>
+<button class="ui circular pinterest icon button">
+  <i class="pinterest  icon"></i>
+</button>
 
     </Fragment>
   ) 
