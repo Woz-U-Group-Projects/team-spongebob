@@ -1,2 +1,2 @@
 tira 
-commit after fixing errors
+commit added first and last name box
