@@ -10,6 +10,8 @@ import Img from '../assets/images/square-image.png'
 import Items from '../auth/test_Data/Item-Data'
 
 
+const { brand, size, color, type } = Items
+
 
 
 const TShirts = () => {
