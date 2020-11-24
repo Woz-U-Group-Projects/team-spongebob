@@ -10,6 +10,8 @@ import Img from '../assets/images/square-image.png'
 import Items from '../auth/test_Data/Item-Data'
 
 
+const { brand, size, color, type } = Items
+
 
 
 const TShirts = () => {
@@ -17,8 +19,7 @@ const TShirts = () => {
   //ITEM CARD
   const itemCard = () => (
     <div className="container">
-      {Items.map((Items, id) => (
-        <div className="ui card" key={id}>
+        <div className="ui card">
           <img className="ui medium rounded image" src={Img} alt="img"/>
           <div className="content">
             <h3 className="header">{Items.brand}</h3>
@@ -30,7 +31,6 @@ const TShirts = () => {
             </div>
           </div>
         </div>
-      ))}
    
     </div>
   )
