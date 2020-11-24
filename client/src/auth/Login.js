@@ -10,6 +10,7 @@ import './Login.css'
 
 //IMPORT COMPONENTS
 import Layout from '../components/Layout'
+import { render } from 'react-dom'
 
 
 const Login = () => {
@@ -48,6 +49,18 @@ const Login = () => {
         toast.error(error.response.data.error);
       });
 };
+
+function Login() {
+  return (
+    <div>
+      <div className="login-Bkg" style={{
+        backgroundImage: 'url(../assets/images/Register.png)'
+      }}>
+        Nice Snippets
+      </div>
+    </div>
+  )
+}
 
 
 // REGISTRATION FORM
