@@ -17,6 +17,9 @@ import Header2 from '../assets/images/Header-Image 2.png'
 import Astronaut from '../assets/images/Astronaut.png'
 import Phones_App from '../assets/images/Phones_App.png'
 
+import Instagram from '../assets/images/Instagram.png'
+
+
 
 
 const Landing = () => {
@@ -154,7 +157,9 @@ const Landing = () => {
               <i className="facebook f icon huge"></i>
             </div>
             <div className="col-4">
-              <i className="twitter icon huge"></i>
+            <a href="https://www.instagram.com">
+              <img src={Instagram} alt="..." />
+            </a>
             </div>
           </div>
         </div>
