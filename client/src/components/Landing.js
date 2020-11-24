@@ -25,7 +25,7 @@ const Landing = () => {
           </div>
         </div>
         <div className="carousel-item">
-          <img src="..." className="d-block w-100" alt="..." />
+          <img src="https://drive.google.com/file/d/1uAWjQNi5RBsBISKzi6TJM_H1QlhWYyDe/view?usp=sharing" className="d-block w-100" alt="..." />
         </div>
         <div className="carousel-item">
           <img src="..." className="d-block w-100" alt="..." />
