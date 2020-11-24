@@ -17,8 +17,7 @@ const TShirts = () => {
   //ITEM CARD
   const itemCard = () => (
     <div className="container">
-      {Items.map((Items, id) => (
-        <div className="ui card" key={id}>
+        <div className="ui card">
           <img className="ui medium rounded image" src={Img} alt="img"/>
           <div className="content">
             <h3 className="header">{Items.brand}</h3>
@@ -30,7 +29,6 @@ const TShirts = () => {
             </div>
           </div>
         </div>
-      ))}
    
     </div>
   )
