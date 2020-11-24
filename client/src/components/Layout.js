@@ -66,10 +66,11 @@ const Layout = ({children, match, history}) => {
   )
 
 
+
   return (
     <Fragment>
       {nav()}
-      <div className="container">{children}</div>
+      <div>{children}</div>
       
     </Fragment>
   )
@@ -82,3 +83,5 @@ export default withRouter(Layout)
 // <Link to="/shop" className="ui item" style={isActive('/shop')}>
 // Shop
 // </Link>
+
+// Change color of Navigation when authenticated
