@@ -72,43 +72,63 @@ const MyClosetCollection = props => {
       <div className="row">
         <div className="col-md-3">
           <MyClosetCards imgsrc={Heels}
-            type="Running"
+            type="Heels"
             numItems="20 Items"
            />
         </div>
         <div className="col-md-3">
-          <MyClosetCards imgsrc={Boots}/>
+          <MyClosetCards imgsrc={Boots}
+            type="Boots"
+            numItems="20 Items"
+          />
         </div>
         <div className="col-md-3">
-          <MyClosetCards imgsrc={Sneakers} />
+          <MyClosetCards imgsrc={Sneakers} 
+            type="Sneakers"
+            numItems="20 Items"
+          />
         </div>
       </div>
       <h3>Accessories</h3>
       <div className="row">
         <div className="col-md-3">
           <MyClosetCards imgsrc={HatsAndBags}
-            type="T-Shirts"
+            type="Hats & Bags"
+            numItems="20 Items"
            />
         </div>
         <div className="col-md-3">
-          <MyClosetCards imgsrc={Watches} />
+          <MyClosetCards imgsrc={Watches} 
+            type="Watches"
+            numItems="20 Items"
+            />
         </div>
         <div className="col-md-3">
-          <MyClosetCards imgsrc={Rings} />
+          <MyClosetCards imgsrc={Rings} 
+            type="Rings"
+            numItems="20 Items"
+            />
         </div>
       </div>
       <h3>Dresses/ Skirts</h3>
       <div className="row">
         <div className="col-md-3">
           <MyClosetCards imgsrc={Floral}
-            type="T-Shirts"
+            type="Floral"
+            numItems="20 Items"
            />
         </div>
         <div className="col-md-3">
-          <MyClosetCards imgsrc={Skirts} />
+          <MyClosetCards imgsrc={Skirts} 
+            type="Skirts"
+            numItems="20 Items"
+            />
         </div>
         <div className="col-md-3">
-          <MyClosetCards imgsrc={Cocktail} />
+          <MyClosetCards imgsrc={Cocktail} 
+            type="Cocktail"
+            numItems="20 Items"
+            />
         </div>
       </div>
     </div>
