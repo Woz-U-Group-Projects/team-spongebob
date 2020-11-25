@@ -101,7 +101,7 @@ const Landing = () => {
 <div className="col">One of three containers</div>
 
 <button class="ui circular facebook icon button">
-  <img class="facebook icon"></img>
+<img class="facebook icon"></img>
 </button>
 <button class="ui circular instagram icon button">
   <img class="instagram icon"></img>
