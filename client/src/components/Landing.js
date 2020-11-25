@@ -68,13 +68,13 @@ const Landing = () => {
     </div>
     <div class="row">
         <div className="col">One of two columns</div>
-        <div className="col">MANAGING YOUR OWN CLOSET HAS NEVER BEEN SO SIMPLE!</div>
+        <div className="col">Managing Your Own Closet Has Never Been So Simple!</div>
       
     </div>
     <div class="row"></div>
         <div className="col-md-6"></div>
-        <h2>NEWSLETTER SIGNUP</h2>
         <div className="col">One of three containers</div><div class="row"></div>
+    <h2>NEWSLETTER SIGNUP</h2>
     <div className="col"></div>
       <input type="text" class="form-control" placeholder="First name"></input>
     
@@ -87,7 +87,10 @@ const Landing = () => {
             
             <button class="btn btn-primary">Subscribe</button>
             <p></p>
-    <div className="col">One of three containers</div>
+
+
+
+    
 
     <div className="container">
      </div>
@@ -95,15 +98,16 @@ const Landing = () => {
         <div className="col-sm"></div>
         <div className="col-sm"></div>
 
+<div className="col">One of three containers</div>
 
 <button class="ui circular facebook icon button">
-  <i class="facebook icon"></i>
+  <img class="facebook icon"></img>
 </button>
 <button class="ui circular instagram icon button">
-  <i class="instagram icon"></i>
+  <img class="instagram icon"></img>
 </button>
 <button class="ui circular pinterest icon button">
-  <i class="pinterest  icon"></i>
+  <img class="pinterest  icon"></img>
 </button>
 
     </Fragment>
