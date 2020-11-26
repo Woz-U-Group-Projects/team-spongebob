@@ -87,7 +87,7 @@ const Landing = () => {
         <div className="col col-6-sm col-6-md col-sm">
           <div className="container-fluid">
             <div className="container">
-              <h2 className="display-4">MANAGING YOUR OWN CLOSET HAD NEVER BEEN SO SIMPLE!</h2>
+              <h2 className="display-4">MANAGING YOUR OWN CLOSET HAS NEVER BEEN SO SIMPLE!</h2>
               <p className="lead">Easily add clothes to your virtual closet by importing from your gallery.</p>
             </div>
             <div className="container-fluid  btn-container tp">
