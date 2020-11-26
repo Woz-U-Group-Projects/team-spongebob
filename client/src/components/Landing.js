@@ -16,6 +16,11 @@ import Header1 from '../assets/images/Header-Image 1.png'
 import Header2 from '../assets/images/Header-Image 2.png'
 import Astronaut from '../assets/images/Astronaut.png'
 import Phones_App from '../assets/images/Phones_App.png'
+import Instagram from '../assets/images/Instagram.png'
+import Facebook from '../assets/images/Facebook.png'
+import Pinterest from '../assets/images/Pinterest.png'
+
+
 
 import Instagram from '../assets/images/Instagram.png'
 
@@ -97,7 +102,7 @@ const Landing = () => {
             </div>
             <div className="container-fluid  btn-container tp">
               <button type="button" className="huge violet ui button dr-btn">Download</button>
-              <button type="button" className="huge violet ui button dr-btn">Register</button>
+              <button type="button" className="huge violet ui button dr-btn" onClick="./registration">Register</button>
             </div>
           </div>
         </div>
@@ -151,16 +156,24 @@ const Landing = () => {
         <div className="col col-sm text-center smtp">
           <div className="row icon-container container-fluid">
             <div className="col-4">
-              <i className="instagram icon huge"></i>
+              <img src={Instagram} alt="instagram" />
             </div>
             <div className="col-4">
-              <i className="facebook f icon huge"></i>
+              <img src={Facebook} alt="facebook" /> 
             </div>
             <div className="col-4">
+<<<<<<< HEAD
             <a href="https://www.instagram.com">
               <img src={Instagram} alt="..." />
             </a>
             </div>
+=======
+              <a href="https://www.pinterest.com">
+                <img src={Pinterest} alt="pinterest"/>
+              </a>
+              
+              </div>
+>>>>>>> e1f2f67be98ec8f1fee2fa27fc55fcd4a22501ce
           </div>
         </div>
       </div>
