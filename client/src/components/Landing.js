@@ -22,9 +22,6 @@ import Pinterest from '../assets/images/Pinterest.png'
 
 
 
-import Instagram from '../assets/images/Instagram.png'
-
-
 
 
 const Landing = () => {
@@ -162,18 +159,11 @@ const Landing = () => {
               <img src={Facebook} alt="facebook" /> 
             </div>
             <div className="col-4">
-<<<<<<< HEAD
-            <a href="https://www.instagram.com">
-              <img src={Instagram} alt="..." />
-            </a>
-            </div>
-=======
               <a href="https://www.pinterest.com">
                 <img src={Pinterest} alt="pinterest"/>
               </a>
               
               </div>
->>>>>>> e1f2f67be98ec8f1fee2fa27fc55fcd4a22501ce
           </div>
         </div>
       </div>
