@@ -1,6 +1,7 @@
 import React from 'react';
 import './MyClosetCollection.css';
 
+
 const MyClosetCard = props => {
   return (
     <div className="card border-light" >
