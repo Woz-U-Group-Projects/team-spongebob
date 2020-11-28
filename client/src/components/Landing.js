@@ -109,7 +109,7 @@ const Landing = () => {
       <div className="footer-container row">
         <div className="col col-sm">
           <div className="container li-container text-center">
-            <ul className="nav flex-column">
+            <ul className="nav flex-column tp">
               <li className="nav-item">
                 <h3>Home</h3>
               </li>
