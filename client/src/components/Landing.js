@@ -119,13 +119,6 @@ const Landing = () => {
               <li className="nav-item">
                 <h3>Register</h3>
               </li>
-              <li className="nav-item">
-                <h3>About Us</h3>
-              </li>
-              <li className="nav-item">
-                <h3>FAQ's</h3>
-              </li>
-              
             </ul>
           </div>
         </div>
@@ -153,10 +146,16 @@ const Landing = () => {
         <div className="col col-sm text-center smtp">
           <div className="row icon-container container-fluid">
             <div className="col-4">
-              <img src={Instagram} alt="instagram" />
+              <a href="https://instagram.com">
+                <img src={Instagram} alt="instagram" />
+              </a>
+              
             </div>
             <div className="col-4">
-              <img src={Facebook} alt="facebook" /> 
+              <a href="https://facebook.com">
+                <img src={Facebook} alt="facebook" /> 
+              </a>
+              
             </div>
             <div className="col-4">
               <a href="https://www.pinterest.com">
