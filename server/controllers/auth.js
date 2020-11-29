@@ -1,6 +1,5 @@
 const User = require('../models/user')
 const jwt = require('jsonwebtoken')
-const expressJwt = require('express-jwt')
 
 // SENDMAIL
 const sgMail = require('@sendgrid/mail')
@@ -109,7 +108,3 @@ exports.login = (req, res) => {
     })
   })
 }
-
-exports.requireLogin = expressJwt({
-  secret: process.env.JWT_SECRET, algorithms: ['RS256'] // req.user
-})

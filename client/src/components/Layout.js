@@ -39,7 +39,7 @@ const Layout = ({children, match, history}) => {
           </Fragment>
         )}
 
-        {isAuth() && isAuth().role === 'subscriber' && (
+        {isAuth() && (
           <div className="right menu">
             <Fragment>
               <Link to="/mycloset" className="ui item" style={isActive('/mycloset')}>
@@ -52,11 +52,11 @@ const Layout = ({children, match, history}) => {
                   logout(() => {
                     history.push('/')
                   })
-              }}>Logout</li>
+              }}><i className="power off icon"></i></li>
 
               <li className="ui item image label">
                 <div className="details">{isAuth().name}</div>
-                <div className="detail">{isAuth().role}</div>
+                <div className="detail">Subscriber</div>
               </li>
             </Fragment>
           </div>

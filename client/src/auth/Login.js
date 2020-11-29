@@ -4,8 +4,6 @@ import axios from 'axios'
 import { authenticate, isAuth } from './helpers'
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.min.css'
-
-//CSS Import
 import './Login.css'
 
 //IMPORT COMPONENTS
@@ -66,7 +64,7 @@ const Login = () => {
 // REGISTRATION FORM
   const loginForm = () => (
     
-    <div className="ui text container mT">
+    <div className="ui text margin container">
       <div className="ui middle aligned center aligned grid">
         <div className="column">
           <h2 className="ui header">
@@ -88,7 +86,7 @@ const Login = () => {
                 <input type="password" onChange={handleChange('password')} value={password} placeholder="Password" />
               </div>
             </div>
-            <div className="ui fluid large submit button" onClick={clickSubmit}>{buttonText}</div>
+            <div className="ui fluid blue inverted large submit button" onClick={clickSubmit}>{buttonText}</div>
           </div>
         </form>
           <div className="ui message">
