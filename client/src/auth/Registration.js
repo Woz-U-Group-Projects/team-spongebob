@@ -8,9 +8,22 @@ import 'react-toastify/dist/ReactToastify.min.css'
 //CSS Import
 import './Registration.css'
 
+//IMAGE IMPORT
+import Background from '../assets/images/Register_Login.png'
 
 //IMPORT COMPONENTS
 import Layout from '../components/Layout'
+
+
+
+var backgroundStyle = {
+  backgroundImage: `url(${Background})`,
+  width: '100vw',
+  height: '95vh',
+  backgroundSize: '100% 100%',
+  backgroundRepeat: 'no-repeat',
+  position: 'relative', 
+}
 
 
 const Registration = () => {
@@ -52,11 +65,11 @@ const Registration = () => {
 // REGISTRATION FORM
   const registrationForm = () => (
     
-    <div className="ui text container mT">
+    <div className="ui text container">
       <div className="ui middle aligned center aligned grid">
-        <div className="column">
+        <div className="column mT">
           <h2 className="ui header">
-          <div className="content">
+          <div className="content" style={{color:"white"}}>
             Register
           </div>
         </h2>
@@ -93,12 +106,13 @@ const Registration = () => {
 
   return (
     <Layout>
+    <div style={ backgroundStyle }>
       <ToastContainer />
       
       {isAuth() ? <Redirect to='/' /> : null}
 
        {registrationForm()}
-      
+    </div>
     </Layout>
   )
 }
