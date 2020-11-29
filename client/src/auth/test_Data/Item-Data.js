@@ -1,10 +1,12 @@
+
 const items = [
   {
     id: 0,
     brand: "Nike",
     size: "XL",
     color: "Black",
-    type: "Sweatshirt"
+    type: "Sweatshirt",
+    alt: "Nike"
   },
   {
     id: 1,

@@ -1,3 +1,7 @@
 .mT {
   margin-top: 200px;
 }
+
+.login-bkg{
+  background-image: url(../assets/images/Register.png);
+}
