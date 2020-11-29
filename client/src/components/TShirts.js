@@ -4,7 +4,7 @@ import React from 'react'
 import Layout from '../components/Layout'
 
 //IMAGE ASSETS IMPORT
-import Img from '../assets/images/square-image.png'
+//import Img from '../assets/images/square-image.png'
 
 //TESTING DATA IMPORT
 import Items from '../auth/test_Data/Item-Data'

@@ -159,8 +159,10 @@ const Landing = () => {
               <img src={Facebook} alt="facebook" /> 
             </div>
             <div className="col-4">
-              <a href="https://www.pinterest.com"></a>
-              <img src={Pinterest} alt="pinterest"/>
+              <a href="https://www.pinterest.com">
+                <img src={Pinterest} alt="pinterest"/>
+              </a>
+              
               </div>
           </div>
         </div>
