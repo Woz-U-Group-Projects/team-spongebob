@@ -1,6 +1,29 @@
 import React, { Fragment } from 'react'
 import "./Landing.css"
 
+import './Landing.css'
+
+
+// IMAGE IMPORT
+import img from '../assets/images/square-image.png'
+import Upload from '../assets/images/Upload.png'
+import Save from '../assets/images/Save.png'
+import Plan from '../assets/images/Plan.png'
+import Manage from '../assets/images/Manage.png'
+import Categorize from '../assets/images/Categorize.png'
+
+import Header1 from '../assets/images/Header-Image 1.png'
+import Header2 from '../assets/images/Header-Image 2.png'
+import Astronaut from '../assets/images/Astronaut.png'
+import Phones_App from '../assets/images/Phones_App.png'
+import Instagram from '../assets/images/Instagram.png'
+import Facebook from '../assets/images/Facebook.png'
+import Pinterest from '../assets/images/Pinterest.png'
+
+
+
+
+
 const Landing = () => {
 
   return (
@@ -21,31 +44,46 @@ const Landing = () => {
       <ol className="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
       </ol>
       <div className="carousel-inner">
         <div className="carousel-item active">
-           <img src="..." className="d-block w-100" alt="..." />
-           <div className="carousel-caption d-non d-md-block">
-              <h3>First Slide</h3>
-              <p>Put something awsome here</p>
-          </div>
+          <img src={Header1} className="d-block w-100" alt="..." />
         </div>
         <div className="carousel-item">
-          <img src="..." className="d-block w-100" alt="..." />
-        </div>
-        <div className="carousel-item">
-          <img src="..." className="d-block w-100" alt="..." />
+          <img src={Header2} className="d-block w-100" alt="..." />
         </div>
       </div>
     </div>
     <div className="container">
       <div className="row">
-        <div className="col-sm"></div>
-        <div className="col-sm"></div>
-        <div className="col-sm"></div>
-        <div className="col-sm"></div>
-        <div className="col-sm"></div>
+        <div className="container-fluid text-center tp">
+          <h1>FEATURES THAT ALLOW YOU TO ...</h1>
+        </div>
+        <div className="col col-sm">
+          <div className="ui small image">
+            <img src={Upload} alt="img"></img>
+          </div>
+        </div>
+        <div className="col col-sm">
+          <div className="ui small image">
+            <img src={Categorize} alt="img"></img>
+          </div>
+        </div>
+        <div className="col col-sm">
+          <div className="ui small image">
+            <img src={Save} alt="img"></img>
+          </div>
+        </div>
+        <div className="col col-sm">
+          <div className="ui small image">
+            <img src={Plan} alt="img"></img>
+          </div>
+        </div>
+        <div className="col col-sm">
+          <div className="ui small image">
+            <img src={Manage} alt="img"></img>
+          </div>
+        </div>
       </div>
       <div className="carousel-item">
         <img src="..." className="d-block w-100" alt="..."/>
