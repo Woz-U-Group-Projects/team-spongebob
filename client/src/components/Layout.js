@@ -3,7 +3,7 @@ import { Link, withRouter } from 'react-router-dom'
 import { isAuth, logout } from '../auth/helpers'
 
 //Logo Import
-//import Logo from '../assets/images/PurpleLogo.png'
+import Logo from '../assets/images/Logo.png'
 
 
 //CSS Import
@@ -22,7 +22,9 @@ const Layout = ({children, match, history}) => {
   const nav = () => (
     <div className="ui secondary pointing menu">
       <Link to="/" className="ui item">
-        ClosetSpace
+        <div className="container-fluid">
+        <img src={Logo} alt="logo" />
+        </div>
       </Link>
       <div className="right menu">
         {!isAuth() && (

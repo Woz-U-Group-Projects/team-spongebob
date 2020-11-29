@@ -101,6 +101,7 @@ const Landing = () => {
         <div className="col">One of five columns</div>
         <div className="col">One of five columns</div>
     </div>
+<<<<<<< HEAD
     <div class="row">
         <div className="col">One column</div>
     </div>
@@ -108,6 +109,12 @@ const Landing = () => {
         <div className="col">One of two columns</div>
         <div className="col">Managing Your Own Closet Has Never Been So Simple!</div>
       
+=======
+    <div className="row footer-container tp">
+      <div className=" container text-center">
+        <h4>ClosetSpace &#x00AE; All Rights Reserved 2020</h4>
+      </div>
+>>>>>>> fd7d3e42c3ef99e8eb9a4694cc755ec1f8260c20
     </div>
     <div class="row"></div>
         <div className="col-md-6"></div>
