@@ -168,7 +168,7 @@ const Landing = () => {
     </div>
     <div className="row footer-container tp">
       <div className=" container text-center">
-        <h4>ClosetSpace &#x00AE; All Rights Reserve 2020</h4>
+        <h4>ClosetSpace &#x00AE; All Rights Reserved 2020</h4>
       </div>
     </div>
 
