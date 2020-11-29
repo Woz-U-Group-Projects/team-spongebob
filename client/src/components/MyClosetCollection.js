@@ -25,7 +25,7 @@ import Cocktail from '../assets/images/Cocktail.png';
 const MyClosetCollection = props => {
   return (
     <div className="container-fluid">
-      <h3>Shirts ></h3>
+      <h3>Shirts &gt;</h3>
       <div className="row">
         <div className="col-md-3">
           <Link to="/tshirts" >
@@ -47,7 +47,7 @@ const MyClosetCollection = props => {
            />
         </div>
       </div>
-      <h3>Pants ></h3>
+      <h3>Pants &gt;</h3>
       <div className="row">
         <div className="col-md-3">
           <MyClosetCards imgsrc={Jeans}
@@ -68,7 +68,7 @@ const MyClosetCollection = props => {
           />
         </div>
       </div>
-      <h3>Shoes ></h3>
+      <h3>Shoes &gt;</h3>
       <div className="row">
         <div className="col-md-3">
           <MyClosetCards imgsrc={Heels}
@@ -89,7 +89,7 @@ const MyClosetCollection = props => {
           />
         </div>
       </div>
-      <h3>Accessories ></h3>
+      <h3>Accessories &gt;</h3>
       <div className="row">
         <div className="col-md-3">
           <MyClosetCards imgsrc={HatsAndBags}
@@ -110,7 +110,7 @@ const MyClosetCollection = props => {
             />
         </div>
       </div>
-      <h3>Dresses & Skirts ></h3>
+      <h3>Dresses & Skirts &gt;</h3>
       <div className="row">
         <div className="col-md-3">
           <MyClosetCards imgsrc={Floral}
